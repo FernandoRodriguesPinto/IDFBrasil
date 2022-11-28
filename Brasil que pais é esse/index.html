@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="imagens/terra.png">
+    <title>A maior biodiversidade do mundo</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <div id="home">
+                    <img src="imagens/terra.png" alt="Ícone do planeta terra">
+                    <a href="index.html">Home</a>
+            </div>
+            <div id="titulo">
+                    <h1>A MAIOR BIODIVERSIDADE DO MUNDO</h1>
+            </div>
+        </header>
+
+        <div class="lateral abrir-painel">
+            <button class="toggle" type="button">
+                <span class="material-icons toggle-fechar">keyboard_double_arrow_left</span>
+                <span class="material-icons toggle-abrir">keyboard_double_arrow_right</span>
+            </button>
+            <div class="painel-lateral">
+                <h4>Menu de Navegação</h4> <br>
+                <li><a href="pampa.html">Pampa</a> <br><br></li>
+                <li><a href="mata atlantica.html">Mata Atlântica</a> <br><br></li>
+                <li><a href="pantano.html">Pantanal</a> <br><br></li>
+                <li><a href="caatinga.html">Caatinga</a> <br><br></li>
+                <li><a href="amazonia.html">Amazônia</a> <br><br></li>
+                <li><a href="cerrado.html">Cerrado</a> <br><br></li>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.querySelector(".toggle").addEventListener("click", () =>{
+            document.querySelector(".lateral").classList.toggle("abrir-painel")
+        });
+    </script>
+    <main>
+        <h1>Afinal, o que é biodiversidade?</h1> <br>
+        <img src="imagens/biodiversidade.jpg" alt="Bandeira do Brasil feita de animais e plantas"> <br> <br>
+        <p>A diversidade biológica (biodiversidade) se refere à abundância e variedade dos seres vivos existentes na biosfera, incluindo todos os animais e plantas em nosso planeta. O termo surgiu em 1985 pela junção de "diversidade" e "biológica", crescendo rapidamente em popularidade desde então e hoje sendo bem popular quando se fala de preservação ambiental </p> <br>
+        <p>Apesar de contrariar o que muita gente pensa, até mesmo lugares como desertos e tundras apresentam diversidade biológica, isso porque o termo não está limitado a todas formas de vida, também se referindo aos ecossistemas, isso é, as inter-relações entre espécies. Toda a diversidade encontrada no gene de cada ser vivo possibilita a adaptação da vida até mesmo em lugares com temperaturas extremas, como mencionado. </p> <br> <br>
+
+        <h2>Megadiversidade no Brasil</h2> <br>
+        <img src="imagens/infografico.png" alt="Infográfico mostrando a biodiversidade do brasil"> <br> <br>
+        <p>Megadiversidade é um termo correspondente a uma imensa riqueza de biodiversidade. Atualmente, diversos países como China, África do Sul, Índia entre outros são considerados nações megadiversas, totalizando 17 países com esse "título", entretanto, o Brasil é considerado o país com a maior biodiversidade do planeta, tendo mais de 115 mil espécies de animais e quase 50 mil de espécies de fungos e plantas. Desse grande total, sua grande maioria se localiza no bioma Amazônia, o qual ocupa quase metade do território brasileiro.</p> <br>
+        
+        <h3>Diversidade por Bioma</h3> <br>
+        <p>Cada região possuí biomas cheios de variedade biológica, sinta-se a vontade para explorar cada uma delas e descobrir espécies nativas que estão espalhadas pelo Brasil.</p> <br>
+        <table>
+            <tr>
+                <td class=tede><a href="pampa.html">Pampa</a></td>
+                <td class=tede><a href="mata atlantica.html">Mata Atlântica</a></td>
+                <td class=tede><a href="pantano.html">Pantanal</a></td>
+            </tr>
+            <tr>
+                <td class=tede><a href="pampa.html"><img src="imagens/pampa.jpg" alt="Vegetão do bioma pampa"></a></td>
+                <td class=tede><a href="mata atlantica.html"><img src="imagens/mata atlantica.jpg" alt="Vegetão do bioma mata atlântica"></a></td>
+                <td class=tede><a href="pantano.html"><img src="imagens/pantano.jpg" alt="Vegetão do bioma pantanal"></a></td>
+            </tr>
+            <tr>
+                <td class=tede><a href="nordeste.html">Caatinga</a></td>
+                <td class=tede><a href="norte.html">Amazônia</a></td>
+                <td class=tede><a href="cerrado.html">Cerrado</a></td>
+            </tr>
+            <tr>
+                <td class=tede><a href="caatinga.html"><img src="imagens/caatinga.jpg" alt="Vegetão do bioma caatinga"></a></td>
+                <td class=tede><a href="amazonia.html"><img src="imagens/amazonia.jpg" alt="Vegetão do bioma amazônia"></a></td>
+                <td class=tede><a href="cerrado.html"><img src="imagens/cerrado.jpg" alt="Vegetão do bioma cerrado"></a></td>
+            </tr>
+        </table>
+    </main>
+    <footer> &copy; Fernando Rodrigues Pinto</footer>
+</body>
+</html>
