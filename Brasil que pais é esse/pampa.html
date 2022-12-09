@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="imagens/terra.png">
+    <title>A maior biodiversidade do mundo</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <div id="home">
+                <img src="imagens/terra.png" alt="Ícone do planeta terra">
+                <a href="index.html">Home</a>
+            </div>
+            <div id="titulo">
+                <h1>PAMPA</h1>
+            </div>
+        </header>
+
+        <div class="lateral abrir-painel">
+            <button class="toggle" type="button">
+                <span class="material-icons toggle-fechar">keyboard_double_arrow_left</span>
+                <span class="material-icons toggle-abrir">keyboard_double_arrow_right</span>
+            </button>
+            <div class="painel-lateral">
+                <h4>Menu de Navegação</h4> <br>
+                <li><a href="pampa.html">Pampa</a> <br><br></li>
+                <li><a href="mata atlantica.html">Mata Atlântica</a> <br><br></li>
+                <li><a href="pantano.html">Pantanal</a> <br><br></li>
+                <li><a href="caatinga.html">Caatinga</a> <br><br></li>
+                <li><a href="amazonia.html">Amazônia</a> <br><br></li>
+                <li><a href="cerrado.html">Cerrado</a> <br><br></li>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.querySelector(".toggle").addEventListener("click", () =>{
+            document.querySelector(".lateral").classList.toggle("abrir-painel")
+        });
+    </script>
+    <main>
+        <h1>Características</h1> <br>
+        <img src="imagens/pampa/pampa2.jpg" alt="Planície com vegetação amrelada, representando o bioma Pampa."> <br> <br>
+        <p>O bioma de <b>Pampa</b> possui áreas com clima úmido e subtropical, se estendendo pelo sul da América do Sul. No Brasil, o bioma ocupa um total de 2% do território nacional, estando apenas localizado no estado de Rio Grande do Sul.</p> <br>
+        <p>Formados por terrenos planos ou levemente ondulados, os Pampas possuem uma biodiversidade formada principalmente por espécies endêmicas, isso é, próprias do local. Sua vegetação é de pequeno e médio porte, o que se deve ao seu clima com uma amplitude térmica relativamente elevada.</p><br>
+        <h4 id="revelar">Lista de estados</h4>
+        <p id="esconder">Rio Grande do Sul</p>
+        <br><br>
+        <h2>Fauna</h2><h5>(Exemplos)</h5><br>
+        <table class="tablebio">
+            <tr>
+                <td><h4>Perdigão</h4></td>
+                <td><h4>João-de-Barro</h4></td>
+                <td><h4>Jacutinga</h4></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/pampa/perdigao.jpg" alt="Perdigão, ave de pescoço longo"></td>
+                <td><img src="imagens/pampa/joao de barro.jpg" alt="João-de-Barro, pássaro de cor marrom"><br></td>
+                <td><img src="imagens/pampa/jacutinga.jpg" alt="Jacutinga, ave preta com ponta das asas esbranquiçada"><br></td>
+            </tr>
+            <tr class="conteudobio">
+                <td>Ave da família Tinamídeo com aparência semelhante a de perdizes e codornas. Possui ótima camuflagem devido a sua coloração.</td>
+                <td>Também chamado de uiracuiar, João-de-Barro é um passário que, como o nome sugere, é hábil no manuseio de barro, o qual é utilizado principalmente para construirem seus ninhos.</td>
+                <td>Conhecida popularmente como peru do mato. Esta ave possui uma coloração mais destacada e, atualmente, está em risco de extinção.</td>
+            </tr>
+
+            <tr>
+                <td><h4>Gaturamo-Verdadeira</h4></td>
+                <td><h4>Tatu-Mulita</h4></td>
+                <td><h4>Preá</h4></td>
+            <tr>
+                <td><img src="imagens/pampa/gaturamo.jpg" alt="Gaturamo-Verdadeiro, passáro com barriga amarelada e parte superior azul"></td>
+                <td><img src="imagens/pampa/tatu mulita.jpg" alt="Tatu-Mulita de cor marrom"><br></td>
+                <td><img src="imagens/pampa/preá.jpg" alt="Preá, roedor pequeno"><br></td>
+            </tr>
+            <tr class="conteudobio">
+                <td>Ave habitante de uma grande região da América do Sul. Enquanto as fêmeas possuem cor amarelada, os machos são pretos com reflexos azuis no dorso, com a parte inferior amarela.</td>
+                <td>Menor espécie do gênero Dasypus, possui cabeça comprida e orelhas longas, com uma carapaça alta e ovulada.</td>
+                <td>Roedor semelhante á capivara, mas menor. Possuem um corpo coberto de pelos de tom cinza ou castanho.</td>
+            </tr>
+        </table>
+        <table class="tablebio">
+            <tr>
+                <td><h4>Jacu</h4></td>
+                <td><h4>Graxaim</h4></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/pampa/jacu.jpg" alt="Jacu, ave de pernas longas e penas cor marrom"></td>
+                <td><img src="imagens/pampa/graxaim.jpeg" alt="Graxaim, canídeo de pelo escuro semelhante ao lobo"><br></td>
+            </tr>
+            <tr class="conteudobio">
+                <td>Apelidado de Penélope, uma ave com pelos escuros e seu papo com tônalidade vermelha alaranjada. Esta ave é conhecida pelos seus comportamentos dispersos.</td>
+                <td>Um canídeo bem semelhante a um lobo, mas em tamanho menor. Muito confundido com o lobo-guará, apesar de apresentarem características bem diferentes.</td>
+            </tr>
+        </table>
+        <br><br>
+        <h2>Flora</h2><h5>(Características)</h5><br>
+        <p>A vegetação do pampa é predominantemente composta de gramíneas e plantas rasteiras, apesar de que árvores e arbustos de pequeno porte também possam ser encontrados. De forma geral, a vegetação pode ser definida pelos seguinte três exemplos:</p> <br>
+        <table class="tablebio">
+            <tr>
+                <td><h4>Nhandavaí</h4></td>
+                <td><h4>Louro-Pardo</h4></td>
+                <td><h4>Babosa-do-Campo</h4></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/pampa/nhadavai.jpg" alt="Nhadavaí, flor rosa"></td>
+                <td><img src="imagens/pampa/louro-pardo.jpg" alt="Louro-pardo, árvore de tronco fino"><br></td>
+                <td><img src="imagens/pampa/babosa do campo.jpg" alt="Babosa-do-Campo, vegetação rasteira com aparência semelhante a espinhos"><br></td>
+            </tr>
+        </table>
+    </main>
+    <footer> &copy; Fernando Rodrigues Pinto</footer>
+</body>
+</html>

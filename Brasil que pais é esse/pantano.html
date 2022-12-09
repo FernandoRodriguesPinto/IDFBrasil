@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="imagens/terra.png">
+    <title>A maior biodiversidade do mundo</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <div id="home">
+                <img src="imagens/terra.png" alt="Ícone do planeta terra">
+                <a href="index.html">Home</a>
+            </div>
+            <div id="titulo">
+                <h1>PANTANAL</h1>
+            </div>
+        </header>
+
+        <div class="lateral abrir-painel">
+            <button class="toggle" type="button">
+                <span class="material-icons toggle-fechar">keyboard_double_arrow_left</span>
+                <span class="material-icons toggle-abrir">keyboard_double_arrow_right</span>
+            </button>
+            <div class="painel-lateral">
+                <h4>Menu de Navegação</h4> <br>
+                <li><a href="pampa.html">Pampa</a> <br><br></li>
+                <li><a href="mata atlantica.html">Mata Atlântica</a> <br><br></li>
+                <li><a href="pantano.html">Pantanal</a> <br><br></li>
+                <li><a href="caatinga.html">Caatinga</a> <br><br></li>
+                <li><a href="amazonia.html">Amazônia</a> <br><br></li>
+                <li><a href="cerrado.html">Cerrado</a> <br><br></li>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.querySelector(".toggle").addEventListener("click", () =>{
+            document.querySelector(".lateral").classList.toggle("abrir-painel")
+        });
+    </script>
+    <main>
+        <h1>Características</h1> <br>
+        <img src="imagens/pantanal/pantanal2.png" alt="Imagem do bioma Pantanal"> <br> <br>
+        <p>O bioma de <b>Pantanal</b> possui áreas com clima tropical, sendo quente e úmido no verão mas frio e seco no inverno. É o menor bioma brasileiro, ocupando apenas 2% do território nacional e estando localizado em dois estados, em um total de 22 cidades.</p> <br>
+        <p>Formados por planícies inundáveis, áreas que margeiam cursos de água e podem inundar durante períodos de cheia, essa inundação causa baixa fertilidade de solo já que faz com que a matéria organica se decompanha mais lentamente. Sua vegetação é diversificada pela proximidade a Floresta Amazônica e ao Cerrado, com árvores de médio e grande porte e também árvores tortuosas de baixo porte.</p><br>
+        <h4 id="revelar">Lista de estados</h4>
+        <p id="esconder">Mato Grosso e Mato Grosso do Sul.</p>
+        <br><br>
+        <h2>Fauna</h2><h5>(Exemplos)</h5><br>
+        <table class="tablebio">
+            <tr>
+                <td><h4>Tuiuiú</h4></td>
+                <td><h4>Onça-Pintada</h4></td>
+                <td><h4>Jacaré-do-Pantanal</h4></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/pantanal/tuiuiu.jpg" alt="Tuiuiú, ave de pernas longas e grandes asas brancas"></td>
+                <td><img src="imagens/pantanal/onçapintada.jpg" alt="Onça-pintada, felino de cor laranja com pintas pretas"><br></td>
+                <td><img src="imagens/pantanal/jacaredopantanal.jpeg" alt="Jacaré de coloração amarelada"><br></td>
+            </tr>
+            <tr class="conteudobio">
+                <td>Apesar de ser encontrada em outros países, mais de 50% de sua população está no Brasil. São famosas por serem a maior ave de planícies inundáveis capazes de voar, tendo 1,6 metros de altura e 3 metros de envergadura.</td>
+                <td>Terceiro maior felino do mundo e, apesar da semelhança com o leopardo, está mais proxima evolutivamente do leão. Presente em outros países mas extinta em diversos locais, como nos Estados Unidos.</td>
+                <td>Também chamado de jacaré-piranha devido a sua grande quantidade de dentes. Possuem padrão de coloração variado com um dorso tipicamente escuro, com faixas transversais amarelas.</td>
+            </tr>
+
+            <tr>
+                <td><h4>Tamanduá-Bandeira</h4></td>
+                <td><h4>Ariranha</h4></td>
+                <td><h4>Sucuri-Amarela</h4></td>
+            <tr>
+                <td><img src="imagens/pantanal/tamandua.jpg" alt="Tamanduá com pelagem marrom"></td>
+                <td><img src="imagens/pantanal/ariranha.jpg" alt="Animal com aparência semelhante à de uma lontra"><br></td>
+                <td><img src="imagens/pantanal/sucuri.jpg" alt="Serpente amarela com manchas pretas"><br></td>
+            </tr>
+            <tr class="conteudobio">
+                <td>Maior das quatro espécies de tamanduá, medindo até 2,1 metros de comprimento. São famosos pelo seu focinho longo adaptado ao consumo de formigas e cupins.</td>
+                <td>Também conhecida como onça d'água, isso porque é o maior carnívoro semiaquático da América do Sul. Se alimentam principalmente de peixes. </td>
+                <td>Serpente que habita áreas alagadas, conhecida pelo seu comprimento e também pela sua coloração vibrante de amarelo com manchas pretas.</td>
+            </tr>
+        </table>
+        <table class="tablebio">
+            <tr>
+                <td><h4>Cervo-do-Pantanal</h4></td>
+                <td><h4>Dourado</h4></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/pantanal/cervo.jpg" alt="Cervo de pelagem alaranjada"></td>
+                <td><img src="imagens/pantanal/dourado.jpg" alt="Peixe de cor amarelada"><br></td>
+            </tr>
+            <tr class="conteudobio">
+                <td>Maior cervídeo sul-americano, podendo alcançar os 127 centímetros de altura e pensando até 125 quilos. São diurnos e solitários, se alimentando principalmente de plantas aquáticas.</td>
+                <td>Conhecido também como Piraju, muito apreciado pelo seu sabor. Seu nome vem de sua coloração dourada por todo seu corpo.</td>
+            </tr>
+        </table>
+        <br><br>
+        <h2>Flora</h2><h5>(Características)</h5><br>
+        <p>Fora a vegetação originária da Floresta Amazônica e do Cerrado mencionada anteriormente, o pantanal é famoso pela sua vegetação "aquática", mais dependente de água e as vezes até mesmo crescendo por cima dela.</p> <br>
+        <table class="tablebio">
+            <tr>
+                <td><h4>Cabomba</h4></td>
+                <td><h4>Aguapé</h4></td>
+                <td><h4>Utriculária</h4></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/pantanal/cabomba.jpg" alt="Plantas de baixo da água"></td>
+                <td><img src="imagens/pantanal/aguapé.jpg" alt="Plantas com uma flor crescendo por cima da água"><br></td>
+                <td><img src="imagens/pantanal/utricularia.jpg" alt="Flor amarela próxima à água"><br></td>
+            </tr>
+        </table>
+    </main>
+    <footer> &copy; Fernando Rodrigues Pinto</footer>
+</body>
+</html>
