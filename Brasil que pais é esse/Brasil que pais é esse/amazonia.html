@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="imagens/terra.png">
+    <title>A maior biodiversidade do mundo</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <div id="home">
+                <img src="imagens/terra.png" alt="Ícone do planeta terra">
+                <a href="index.html">Home</a>
+            </div>
+            <div id="titulo">
+                <h1>AMAZÔNIA</h1>
+            </div>
+        </header>
+
+        <div class="lateral abrir-painel">
+            <button class="toggle" type="button">
+                <span class="material-icons toggle-fechar">keyboard_double_arrow_left</span>
+                <span class="material-icons toggle-abrir">keyboard_double_arrow_right</span>
+            </button>
+            <div class="painel-lateral">
+                <h4>Menu de Navegação</h4> <br>
+                <li><a href="pampa.html">Pampa</a> <br><br></li>
+                <li><a href="mata atlantica.html">Mata Atlântica</a> <br><br></li>
+                <li><a href="pantano.html">Pantanal</a> <br><br></li>
+                <li><a href="caatinga.html">Caatinga</a> <br><br></li>
+                <li><a href="amazonia.html">Amazônia</a> <br><br></li>
+                <li><a href="cerrado.html">Cerrado</a> <br><br></li>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.querySelector(".toggle").addEventListener("click", () =>{
+            document.querySelector(".lateral").classList.toggle("abrir-painel")
+        });
+    </script>
+    <main>
+        <h1>Características</h1> <br>
+        <img src="imagens/amazonia/amazonia2.jpeg" alt="Imagem do bioma Amazônia"> <br> <br>
+        <p>O bioma da <b>Amazônia</b> possui áreas com clima equatorial úmido, com altos níveis de precipitação e temperatura elevada. No brasil, o bioma ocupa 49% do território nacional e está localizado em nove estados brasileiros. A maioria do bioma está localizado no Brasil, mas também pode ser visto na Bolívia, Colômbia, Equador, Guiana, Guiana Francesa, Peru, Suriname e Venezuela.</p> <br>
+        <p>Formado principalmente pelas planícies (inundadas pelos rios), planaltos e depressões. Sua vegetação abrange a Floresta Amazônica, a maior floresta tropical do mundo, com mais de 5 milhões de km².</p><br>
+        <h4 id="revelar">Lista de estados</h4>
+        <p id="esconder"> Acre, Amapá, Amazonas, Pará, Roraima, Rondônia, Mato Grosso, Maranhão e Tocantins.</p>
+        <br><br>
+        <h2>Fauna</h2><h5>(Exemplos)</h5><br>
+        <table class="tablebio">
+            <tr>
+                <td><h4>Uacari-Branco</h4></td>
+                <td><h4>Bicho-Preguiça</h4></td>
+                <td><h4>Peixe-Boi-da-Amazônia</h4></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/amazonia/uacari.jpg" alt="Macaco semelhante ao orangutango, com pelagem esbranquiçada e rosto vermelho"></td>
+                <td><img src="imagens/amazonia/bichopreguiça.jpg" alt="Bicho-Preguiça agarrado em um galho"><br></td>
+                <td><img src="imagens/amazonia/peixeboi.jpg" alt="Peixe-Boi de cor cinza e grandes nadadeiras"><br></td>
+            </tr>
+            <tr class="conteudobio">
+                <td>Macaco de pelagem esbranquiçada com face desprovida de pelo, com uma pele de coloração vermelha. Se alimenta de frutos, insetos, sementes etc.</td>
+                <td>Animal de movimento lento que vive em galhos de árvores, o que é possível devido às suas grandes garras. Possuem pelo longo que ajudam na camuflagem, essa sendo sua principal forma de defesa.</td>
+                <td>Animais mamíferos que alcançam aproximadamente três metros de comprimento, com um corpo cinzento e mancha esbranquiçada no peito. Herbívoro, se alimentando principalmente de plantas aquáticas e semi-aquáticas.</td>
+            </tr>
+
+            <tr>
+                <td><h4>Boto</h4></td>
+                <td><h4>Pirarucu</h4></td>
+                <td><h4>Jacaretinga</h4></td>
+            <tr>
+                <td><img src="imagens/amazonia/boto.jpg" alt="Boto de cor cinza pulando sobre a água"></td>
+                <td><img src="imagens/amazonia/pirarucu.jpg" alt="Peixe comprido e cauda avermelhada"><br></td>
+                <td><img src="imagens/amazonia/jacaretinga.jpg" alt="Jacaré marrom com dorso esbranquiçado"><br></td>
+            </tr>
+            <tr class="conteudobio">
+                <td>Semelhante a golfinhos, por isso também recebem o nome de golfinhos-fluviais. Dentre suas espécies, uma delas é o famoso boto-cor-de-rosa, fonte de várias lendas.</td>
+                <td>Um dos maiores peixes de água doce do planeta, identificado pelo seu grande porte e também pela sua cuada vermelha. Sua alimentação inclui frutas, vermes, peixes e até mesmo aves aquáticas.</td>
+                <td>Jacaré de água doce que recebeu seu nome devido a coloração branca em seu dorso, "tinga" significando branco em tupi. Se alimentam de mamíferos, peixes, répteis etc.</td>
+            </tr>
+        </table>
+        <table class="tablebio">
+            <tr>
+                <td><h4>Harpia</h4></td>
+                <td><h4>Anta</h4></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/amazonia/harpia.jpg" alt="Grande ave semelhante ao gavião com asas escuras"></td>
+                <td><img src="imagens/amazonia/anta.jpg" alt="Anta se locomovendo pelo campo"><br></td>
+            </tr>
+            <tr class="conteudobio">
+                <td>Também chamado de gavião-real, uma ave de rapina que pode alcançar 20kg e quase três metros de envergadura. Pelo seu grande porte são capazes de caçar até mesmo preguiças ou macacos, assim como outras aves.</td>
+                <td>Maior mamífero terrestre do Brasil, alcançando 2,4 metros de comprimento. Possuem alimentação principalmente composta de frutos, tendo um papel importante na dispersão de sementes.</td>
+            </tr>
+        </table>
+        <br><br>
+        <h2>Flora</h2><h5>(Características)</h5><br>
+        <p>Vegetação caracterízada por florestas densas com árvores de grande porte. Devido a grande quantidade de chuvas, a flora pode ser separada em três áreas: Mata de terra firme, que nunca são inundadas e possuem vegetação seca; Matas de várzea, inundadas periódicamente; e Mata de igapó, sempre inundada e com vegetação baixa.</p> <br>
+        <table class="tablebio">
+            <tr>
+                <td><h4>Castanheira</h4></td>
+                <td><h4>Andiroba</h4></td>
+                <td><h4>Vitória-Régia</h4></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/amazonia/castanheira.jpg" alt="Árvore de grande porte vista de baixo"></td>
+                <td><img src="imagens/amazonia/andiroba.jpeg" alt="Árvore de grande porte com tronco acinzentado"><br></td>
+                <td><img src="imagens/amazonia/vitoria regia.jpg" alt="Planta em formato de disco flutuando sobre a água"><br></td>
+            </tr>
+        </table>
+    </main>
+    <footer> &copy; Fernando Rodrigues Pinto</footer>
+</body>
+</html>
